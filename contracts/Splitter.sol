@@ -7,7 +7,7 @@ contract Splitter {
     
     event LogSplitted(address indexed payer, address indexed first, address indexed second, uint256 remainder, uint256 amount);
     
-
+    
     constructor (address addressOne, address addressTwo) public {
         payer = msg.sender;
         splitOne = addressOne;
