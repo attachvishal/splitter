@@ -1378,10 +1378,10 @@
     "1": {
       "events": {},
       "links": {},
-      "address": "0x3246d2875c0ccdd9147b2ef40088ddb8bf691b9b",
-      "transactionHash": "0x08971c2f03c449d5a5697d2718560c4242e2a7a1d2e742167362287545a99834"
+      "address": "0x240fadd0e97290e586ee7f19f6c8caceaeb360de",
+      "transactionHash": "0xee1b246ec84705c233bcf9b049fd614097b9fc4d9b381b5781e5e5289fa7c6ea"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-10T23:42:49.251Z"
+  "updatedAt": "2018-08-11T05:50:16.502Z"
 }
