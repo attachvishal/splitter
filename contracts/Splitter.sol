@@ -5,13 +5,11 @@ contract Splitter {
     address public splitOne;
     address public splitTwo;
     
-    event LogSplitted(address indexed payer, address indexed first, address indexed second, uint256 remainder, uint256 amount);
+    event LogSplitted(address indexed payer, address indexed receiver1, address indexed receiver2, uint256 amount);
     
-    
-    constructor (address addressOne, address addressTwo) public {
-        payer = msg.sender;
-        splitOne = addressOne;
-        splitTwo = addressTwo;
+
+    constructor () public {
+        
     }
     
     modifier isAlice () {
@@ -25,8 +23,10 @@ contract Splitter {
         return amountForSplit;
     }
     
-    function split () public isAlice payable {
-
+    function split (address addressOne, address addressTwo) public isAlice payable {
+        payer = msg.sender;
+        splitOne = addressOne;
+        splitTwo = addressTwo;
         require(splitOne != address(0));
         require(splitTwo != address(0));
         require(msg.value != 0);
